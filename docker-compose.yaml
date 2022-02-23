@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  discord-voice-bot:
+    build: .
+    container_name: discord-voice-bot
+    volumes:
+      - "./app:/opt/app/"
+    working_dir: /opt/app/
+    entrypoint: 'python3 yomi-KAI.py'
